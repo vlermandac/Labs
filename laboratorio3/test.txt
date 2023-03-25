@@ -1,0 +1,24 @@
+6
+is_empty
+insesrt 1
+insesrt 2
+insesrt 3
+insesrt 4
+insesrt 5
+insesrt 6
+insesrt 7
+insesrt 8
+insesrt 9
+insesrt 10
+is_empty
+remove
+remove
+remove
+remove
+remove
+remove
+remove
+remove
+remove
+remove
+is_empty
