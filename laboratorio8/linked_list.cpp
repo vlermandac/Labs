@@ -24,9 +24,9 @@ void linked_list::pop_front() {
 
 void linked_list::print(){
   node* current = head;
-  while(current->next){
-      current = current->next;
-      // cosas
+  while(current->next != nullptr){
+    //print
+    current = current->next;
   }
 }
 
