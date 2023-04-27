@@ -22,6 +22,14 @@ void linked_list::pop_front() {
   if(!head) tail = nullptr;
 }
 
+void linked_list::print(){
+  node* current = head;
+  while(current->next){
+      current = current->next;
+      // cosas
+  }
+}
+
 void linked_list::pop_back() {
   if(head == nullptr) return;
   if(head->next == nullptr){
