@@ -8,15 +8,19 @@ int main(){
   string operation;
   int value;
   while(cin>>operation){
-    cin>>value;
-    if(operation == "push_back")
+    if(operation == "push_back"){
+        cin>>value;
         list.push_back(value);
-    if(operation == "push_front")
+    }
+    if(operation == "push_front"){
+        cin>>value;
         list.push_front(value);
+    }
     if(operation == "pop_front")
         list.pop_front();
     if(operation == "pop_back")
         list.pop_back();
   }
+  list.print();
   return 0;
 }
