@@ -16,4 +16,5 @@ public:
   void push_front(int data);
   void pop_front();
   void pop_back(); 
+  void print();
 };
