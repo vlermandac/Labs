@@ -9,7 +9,7 @@ typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
 
-vector<vii> graph;
+vector<vii> graph; // equivalente a : vector<vector<pair<int,int>>> graph;
 vector<int> dist;
 vector<int> parent;
 
@@ -43,9 +43,14 @@ int main(){
   /*
     completar
   */
+  graph.assign(20, vector<int>());
+  int v, u, w;
+  while(cin>>v>>u>>w){
+    graph[v].push_back({u,w});
+  }
   dist.assign(graph.size(), INT_MAX);
   parent.assign(graph.size(), -1);
-  int concepcion, santiago;
+  int concepcion = 0, santiago = 5;
   dijsktra(concepcion);
   print_path(santiago);
   return 0;
